@@ -10,11 +10,11 @@ jobs:
     steps:
         - name: Check out
           uses: actions/checkout@v3.3.0
-        # - name: Setup node
-        #  uses: actions/setup-node@v3
-        #  with:
-        #    node-version: '18.17.1'
+        - name: Setup node
+          uses: actions/setup-node@v3
+          with:
+            node-version: '18.17.1'
         - name: pwd
           run: echo "$(pwd)"
         - name: ls
-          run: echo "$(ls)"
+          run: echo "$(ls app/nested)"
