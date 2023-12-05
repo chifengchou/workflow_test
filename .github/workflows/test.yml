@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Tests
 on:
   push
 
@@ -13,4 +13,4 @@ jobs:
           with:
             node-version: '18.17.1'
         - name: echo
-          run: ls -l **/*
+          run: ls -l *
