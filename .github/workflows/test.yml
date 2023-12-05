@@ -12,5 +12,7 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version: '18.17.1'
-        - name: echo
-          run: ls -l
+        - name: pwd
+          run: echo "$(pwd)"
+        - name: ls
+          run: echo "$(ls -l)"
