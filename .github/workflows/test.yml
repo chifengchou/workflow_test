@@ -18,12 +18,12 @@ jobs:
           run: echo "$(pwd)"
         - name: ls before
           run: echo "$(ls app/nested)"
-        - name: pnpm setup
-          uses: pnpm/action-setup@v2
-          with:
-            version: '8.6.12'
-            run_install: true
-        - name: ls after
-          run: echo "$(ls app/nested)"
+        # - name: pnpm setup
+        #  uses: pnpm/action-setup@v2
+        #  with:
+        #    version: '8.6.12'
+        #    run_install: true
+        # - name: ls after
+        #  run: echo "$(ls app/nested)"
         - name: npx test
           run: npx cdk --version
