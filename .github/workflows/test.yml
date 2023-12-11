@@ -26,4 +26,4 @@ jobs:
         - name: ls after
           run: echo "$(ls app/nested)"
         - name: npx test
-          run: npx cdk
+          run: npx cdk --version
