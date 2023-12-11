@@ -25,3 +25,5 @@ jobs:
             run_install: true
         - name: ls after
           run: echo "$(ls app/nested)"
+        - name: npx test
+          run: npx cdk
